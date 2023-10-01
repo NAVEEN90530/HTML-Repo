@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+.container{
+    display:flex;
+    justify-content: center;
+    border: 5px solid black;
+    height: 250px;
+    width: 500px;
+    flex-wrap: wrap;
+    align-items: center;
+    color: white;
+    font-size: 50px;
+}
+.fluxbox1{
+    background-color: aqua;
+}
+.fluxbox2{
+    background-color: blueviolet;
+}
+.fluxbox3{
+    background-color: cadetblue;
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="fluxbox1" style="flex-grow:1;">box1</div>
+        <div class="fluxbox2" style="flex-grow :8;"> box2 </div>
+        <div class="fluxbox3" style="flex-shrink: 5;">box3</div>
+    </div>
+</body>
+</html>

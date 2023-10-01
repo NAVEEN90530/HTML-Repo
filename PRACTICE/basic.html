@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            color: white;
+            text-align: center;
+            border: 5px solid black;
+        }
+        .mainhead{
+            display: block;
+            background-color: aqua;
+            height: 50px;
+            margin-bottom: 5px;
+        }
+        .maincon{
+            display: flex;
+            flex-direction: row;
+            align-self: center;
+        }
+        .container{
+            flex-direction: column;
+        }
+        .container2{
+            flex-direction: column;
+        }
+        .hero{
+            background-color: palevioletred;
+            height: 250px;
+            width: 550px;
+            margin-top: 10px;
+            margin-right: 5px;
+        }
+        .slidebar{
+            height: 550px;
+            width: 550px;
+            background-color: rgb(76, 187, 76);
+            margin-top: 10px;
+            margin-right: 5px;
+        }
+        .main-content{
+            height: 550px;
+            width: 750px;
+            background-color: gold;
+            margin-top: 10px;
+            margin-left: 5px;
+        }
+        .extra{
+            height: 250px;
+            width: 750px;
+            background-color: gray;
+            margin-top: 10px;
+            margin-left: 5px;
+        }
+        .related{
+            display: flex;
+        }
+        .images{
+            height: 250px;
+            width: 750px;
+            background-color: rgb(76, 187, 76);
+            margin-top: 10px;
+            margin-right: 5px;
+        }
+        .points{
+            height: 250px;
+            width: 550px;
+            background-color: palevioletred;
+            margin-top: 10px;
+            margin-left: 5px;
+        }
+        .footer{
+            height: 50px;
+            background-color: rgb(219, 107, 15);
+            margin-top: 10px;
+            margin-right: 5px;
+        }
+    </style>
+</head>
+<body>
+    <header class="mainhead">Header</header>
+    <div class="maincon">
+     <div class="container">
+        <div class="hero">hero</div>
+        <div class="slidebar">slidebar</div>
+     </div>
+     <div class="container2">
+        <div class="main-content">main content
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et reiciendis nesciunt cupiditate saepe illum placeat?</p>
+        </div>
+        <div class="extra">Extra content</div>
+     </div>
+    </div>
+    <div class="related">
+       <div class="images">Related images</div>
+       <div class="points">Related poimts</div>
+    </div>
+    <footer class="footer">Footer</footer>
+</body>
+</html>

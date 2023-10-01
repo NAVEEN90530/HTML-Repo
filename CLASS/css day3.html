@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css box model</title>
+    <style>
+        .one{
+            border-radius: 200px;
+            height: 180px;
+            width: 180px;
+            border-style: dotted;
+            text-align: center;
+        }
+        .cal{
+            height: 320px;
+            width: 700px;
+            padding: 25px;
+            border-width: 5px 10px 15px 20px;
+            border-style:dotted dashed double ridge;
+            border-color: blueviolet red gold rosybrown;
+            border-radius: 50px;
+            margin: 200px;
+        }
+    </style>
+</head>
+<body>
+    <div class="one">
+        <img src="ak.jpeg" alt="ak">
+    </div><br>
+    <div class="cal">
+    <h1>width calculation</h1>
+    <pre>content Width + left padding +right padding +left border +right border + left margin + right margin
+        width=320+50(lp+rp)+10(lb+rb)+0(lm+rm)=380
+        width=380px
+    </pre>
+    </div>
+    <div class="cal">
+        <h1>height calculation</h1>
+        <pre>content height + top padding +bottom padding +top border +bottom border + top margin + bottom margin
+            height=700+50(tp+bp)+10(tb+bb)+0(tm+bm)=380
+            height=760px
+        </pre>
+        </div >
+</body>
+</html>

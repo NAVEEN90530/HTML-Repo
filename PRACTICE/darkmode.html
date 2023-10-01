@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Darkmode</title>
+    <style>
+        body{
+            margin: 0px;
+            padding: 0px;
+            display: inline-flex;
+            max-height: 100vh;
+            max-width: 100vw;
+            color: rgb(124, 17, 17);
+        }
+        .dark{
+            display: block;
+        }
+         input[type='checkbox']
+        {
+            -webkit-appearance: none;
+            appearance: none;
+            visibility: hidden;
+            display: none;
+        } 
+        .check{
+            position: relative;
+            display: block;
+            height: 20px;
+            width: 60px;
+            background-color: #092c3e;
+            cursor: pointer;
+            border-radius: 20px;
+            overflow: hidden;
+            transition:ease-in 5s;
+        }
+        input[type='checkbox']:checked ~ .check
+        {
+            background-color: #fff;
+            box-shadow: 0 0 0 1800px #0a0a0a;
+        }
+        input[type='checkbox']:checked ~ .check::before
+        {
+            transform: translateX(0px);
+        }
+        .check::before{
+            content: '';
+            position: absolute;
+            top: 2px;
+            left: 2px;
+            background-color:rgb(10, 10, 10);
+            width: 16px;
+            height: 16px;
+            border-radius: 50%;
+            transition: 0.5s;
+        }
+        input[type='checkbox']:checked ~ .check::after
+        {
+            transform: translateX(-50px);
+            background-color: #fff;
+            box-shadow: 0 0 0 1800px #c58181;
+        }
+        .check::after{
+            content: '';
+            position: absolute;
+            top: 2px;
+            left: 2px;
+            background: #f5f0f0;
+            width: 16px;
+            height: 16px;
+            border-radius: 50%;
+            transition: 0.5s;
+        }
+    </style>
+</head>
+<body>
+    <div class="dark">
+        <label>
+            <input type="checkbox">
+            <span class="check"></span>
+        </label>
+    </div><hr/>
+    <div class="co">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut ratione autem atque! Quos obcaecati labore ducimus consequuntur, dolor tempore voluptatem omnis minima! Quis inventore illum voluptatum eius nobis, fugiat quisquam?</div>
+</body>
+</html>

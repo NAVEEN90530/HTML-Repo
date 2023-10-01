@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>profile</title>
+    <style>
+        body{
+            background-color: rgb(65, 65, 170);
+        }
+        .main{
+            background-image: linear-gradient( to right, pink,lightblue);
+            display: flex;
+            flex-direction: row;
+            border-radius: 5px;
+            margin-top: 150px;
+            margin-left: 200px;
+            margin-right: 200px;
+            gap: 10px;
+        }
+        .container1{
+            height: 400px;
+            width: 300px;
+            background-color: rgba(0, 0, 0, 0.582);
+            border-radius: 25px;
+            margin: 25px;
+        }
+        .container2{
+            height: 400px;
+            width: 500px;
+            background-color: rgba(0, 0, 0, 0.582);
+            border-radius: 25px;
+            margin: 25px;
+        }
+        .photo{
+            border-radius: 100px;
+            margin-top: 10px;
+            margin-bottom: 5px;
+            padding-left: 25px;
+        }
+        .name{
+            margin-top: 10px;
+            margin-bottom: 5px;
+            padding-left: 75px;
+            font-size: 25px;
+            background: -webkit-linear-gradient(rgb(204, 17, 148), yellow);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .job{
+            margin-top: 10px;
+            margin-bottom: 5px;
+            padding-left: 75px;
+            font-size: large;
+            color: white;
+        }
+        .profile{
+            text-align: center;
+            font-size: 25px;
+            background: -webkit-linear-gradient(rgb(204, 17, 148), yellow);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .per{
+            margin-top: 15px;
+            margin-bottom: 5px;
+            padding-left: 150px;
+            font-size: large;
+            color: white;
+        }
+        .per>div{
+            margin-top: 15px;
+        }
+        .footer{
+            text-align: center;
+            margin-top: 50px;
+            color: white;
+        }
+        span{color: red;}
+        #name{
+            color: white;
+            display: flex;
+            margin-right: 300px;
+            flex-direction: row-reverse;
+            font-size: larger;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="container1">
+            <div class="photo"><img class="photo" src="ak.jpeg" alt="my image"></div>
+            <div class="name">AJITH KUMAR</div>
+            <div class="job">WEB DEVELOPER</div>
+        </div>
+        <div class="container2">
+            <div class="profile">Profile Detials</div>
+         <div class="per">
+            <div class="name1">Name:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Ajith Kumar</div>
+            <div class="age">Age:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;23</div>
+            <div class="mobile">Mobile:&nbsp;&nbsp;&nbsp;9514492175</div>
+            <div class="email">Email:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ak.gmail.com</div>
+            <div class="add">Address:&nbsp;123 Main st,Anytown,INDIA</div>
+         </div>
+            <div class="footer">Made with <span> ❤</span> by NAVEEN </div>
+        </div>
+    </div>
+    <div id="name">DESIGN BY NAVEEN</div>
+</body>
+</html>

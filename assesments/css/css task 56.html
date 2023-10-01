@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Using Pseudo Element</title>
+    <style>
+        .one::after{
+            content: 'o World';
+            color: red;
+        }
+        div::first-letter{
+            text-transform: uppercase;
+        }
+        div::marker{
+            color: yellow;
+        }
+        div::selection{
+            color: brown;
+        }
+    </style>
+</head>
+<body>
+    <div class="one">Hell</div>
+    <div>Select the text in first line to see the effect.</div>
+    <div>This is an example of ::selection Pseudo-element.</div>
+</body>
+</html>

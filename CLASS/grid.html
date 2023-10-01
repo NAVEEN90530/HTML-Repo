@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            background-color: bisque;
+            display:grid;
+            grid-template-columns:repeat(3,100px);
+            grid-template-rows:repeat(3,100px);
+            justify-content: end;
+            align-content: start;
+            padding: 10px;
+            gap:10px;
+        }
+        .container > div{
+            background-color: blueviolet;
+            text-align: center;
+            padding: 20px 0;
+            font-size: 30px;
+        }
+         .gridbox1{
+            grid-column-start: 1;
+            grid-column-end: 8;
+           grid-row-start: ;
+            grid-row-end: 4;
+        } 
+        .gridbox2{
+            grid-column-start: 1;
+            grid-column-end: 4;
+        } 
+        </style>
+        
+</head>
+<body>
+    <div class="container">
+        <div class="gridbox1">box1</div>
+        <div class="gridbox2">box2</div>
+        <div class="gridbox3">box3</div>
+        <div class="gridbox4">box4</div>
+        <div class="gridbox5">box5</div>
+        <div class="gridbox6">box6</div>
+        <div class="gridbox7">box7</div>
+        <div class="gridbox8">box8</div>
+        <div class="gridbox9">box9</div>
+    </div>
+</body>
+</html>

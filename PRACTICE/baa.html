@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .div {
+            height: 800px;
+            display: flex;
+            width: 1200px;
+            /* justify-content: space-around; */
+            flex-wrap: wrap;
+            flex-direction: row;
+            border: 2px solid;
+        }
+
+        .header {
+            width: 1200px;
+            height: 50px;
+            background-color: rgb(42, 150, 166);
+            text-align: center;
+            text-transform: capitalize;
+            font-size: 30px;
+            color: darkred;
+            border: 1px solid;
+        }
+        #one {
+            height: 300px;
+            width: 300px;
+            align-self: baseline;
+            background-color: rgb(122, 35, 90);
+            text-align: center;
+            font-size: 30px;
+            border: 1px solid;
+            display: inline;
+        }
+        #two {
+            height: 200px;
+            width: 300px;
+            background-color: rgb(122, 35, 90);
+            text-align: center;
+        }
+        .hero{
+            display: flex;
+            flex-direction: column;
+            flex-wrap: nowrap;
+        }
+
+        .main {
+            text-align: center;
+            background-color: coral;
+            height: 300px;
+            width: 750px;
+            margin-left: 3px;
+    
+        }
+        .five {
+            background-color: rgb(85, 68, 68);
+            text-align: center;
+            height: 200px;
+            width: 650px;
+            margin: 3px;
+        }
+
+        .six {
+            background-color: chartreuse;
+            height: 100px;
+            width: 650px;
+            text-align: center;
+            margin: 3px;
+        }
+
+        .seven {
+            background-color: darkkhaki;
+            height: 100px;
+            width: 200px;
+            text-align: center;
+            margin: 3px;
+        }
+
+        .eight {
+            background-color: darkblue;
+            text-align: center;
+            margin: 3px;
+            width: 900px;
+            height: 100px;
+            font-size: 30px;
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="div" >
+        <div class="header">header</div>
+        
+            <div class="hero" id="two">Hero</div>
+            <div class="main">
+                <h1>Main content</h1><br />
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facilis, eius.</p>
+            </div>
+        
+        
+            <div class="hero" id="one">Slide bar</div>
+            <div class="five">Extra content</div>
+        
+    
+
+            <div class="six">Related images</div>
+            <div class="seven">Related posts</div>
+        
+        <div class="eight">footer</div>
+    </div>
+</body>
+
+</html

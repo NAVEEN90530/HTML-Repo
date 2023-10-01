@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BOOTSTRAP DAY2</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="pagesize.css">
+    <style>
+
+         .container{
+            background-color: darkcyan;
+            color: tomato;
+        
+        }
+        .container-sm{
+            background-color: darkcyan;
+            color: tomato;
+        }
+        .container-md{
+            background-color: rgb(142, 160, 160);
+            color: tomato;
+        }
+        .container-lg{
+            background-color: darkcyan;
+            color: rgb(58, 52, 51);
+        }
+        .container-xl{
+            background-color: darkcyan;
+            color: tomato;
+        }
+        .container-xxl{
+            background-color: darkcyan;
+            color: tomato;
+        }
+        .container-fluid{
+            background-color: darkcyan;
+            color: tomato;
+        }
+        .container-xs{
+            background-color: darkcyan;
+            color: tomato;
+        } 
+
+    </style>
+</head>
+<body>
+     <div class="container" id="my">
+        <h1>my page</h1>
+        <h2 id="size"></h2>
+    </div>
+    <div class="container-xs"  id="my3">
+        <h1>my page xs not shown</h1>
+        <h2 id="size3"></h2>
+    </div>
+    <div class="container-sm" id="my1">
+        <h1>my page small</h1>
+        <h2 id="size1"></h2>
+    </div>
+    <div class="container-md" id="my2">
+        <h1>my page md</h1>
+        <h2 id="size2"></h2>
+    </div>
+    <div class="container-lg" id="my4">
+        <h1>my page lg</h1>
+        <h2 id="size4"></h2>
+    </div>
+    <div class="container-xl" id="my5">
+        <h1>my page xl</h1>
+        <h2 id="size5"></h2>
+    </div>
+    <div class="container-xxl" id="my6">
+        <h1>my page xxl</h1>
+        <h2 id="size6"></h2>
+    </div>
+    <div class="container-fluid " id="my7">
+        <h1>my page container-fluid</h1>
+        <h2 id="size7"></h2>
+    </div> 
+    <div class="container">
+        <p class="text-primary">.text-primary</p>
+<p class="text-secondary">.text-secondary</p>
+<p class="text-success">.text-success</p>
+<p class="text-danger">.text-danger</p>
+<p class="text-warning bg-dark">.text-warning</p>
+<p class="text-info bg-dark">.text-info</p>
+<p class="text-light bg-dark">.text-light</p>
+<p class="text-dark">.text-dark</p>
+<p class="text-body">.text-body</p>
+<p class="text-muted">.text-muted</p>
+<p class="text-white bg-dark">.text-white</p>
+<p class="text-black-50">.text-black-50</p>
+<p class="text-white-50 bg-dark">.text-white-50</p>
+    </div>
+    
+    <div class="container">
+       <p class="h1 text-danger bg-warning ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam, ut?</p>
+      </div>
+      <div class="container">
+        
+        <p class="display-1  m-5 text-danger bg-warning ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam, ut?</p>
+        <p class="display-2 text-danger bg-warning ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam, ut?</p>
+        <p class="display-3 text-danger bg-warning ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam, ut?</p>
+        <p class="display-4 text-danger bg-warning ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam, ut?</p>
+        <p class="display-5 text-danger bg-warning ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam, ut?</p>
+        <p class="display-6 text-danger bg-warning ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam, ut?</p>
+
+    </div>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <script>window.onresize=function(event){
+    
+        var width = document.getElementById("my").clientWidth; 
+        document.getElementById("size").innerHTML=width; 
+        var width1 = document.getElementById("my1").clientWidth; 
+        document.getElementById("size1").innerHTML=width; 
+        var width2 = document.getElementById("my2").clientWidth; 
+        document.getElementById("size2").innerHTML=width; 
+        var width3 = document.getElementById("my3").clientWidth; 
+        document.getElementById("size3").innerHTML=width; 
+        var width4 = document.getElementById("my4").clientWidth; 
+        document.getElementById("size4").innerHTML=width; 
+        var width5 = document.getElementById("my5").clientWidth; 
+        document.getElementById("size5").innerHTML=width; 
+        var width6 = document.getElementById("my6").clientWidth; 
+        document.getElementById("size6").innerHTML=width; 
+        var width7 = document.getElementById("my7").clientWidth; 
+        document.getElementById("size7").innerHTML=width; 
+    }
+   
+        </script>
+    
+</body>
+</html>

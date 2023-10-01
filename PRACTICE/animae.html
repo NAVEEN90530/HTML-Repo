@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main{
+            animation-name: my-1;
+            width: 300px;
+        height: 500px;
+        background: rgb(167, 136, 136);
+        perspective: 800px;
+
+        }
+      
+        
+     div{
+        width: 100px;
+        height: 100px;
+        background: red;
+        animation-name: my-animation;
+         animation-duration: 10s;
+         animation-timing-function: linear;
+         animation-direction: alternate-reverse;
+         animation-iteration-count: infinite;
+       }
+       @keyframes my-animation{
+        0%{ 
+  background-color:blue;
+  transform: skew(20deg);
+
+}
+25%{background-color:orange;
+   transform: skewX(40deg);
+}
+50%{background-color:pink;
+   transform: translate(100px,100px); 
+   transform: skewY(55deg);
+}
+75%{background-color:black;
+    transform: skewX(75deg);
+}
+100%{background-color:rgb(218, 43, 43);
+  transform: translate(0,0);
+  transform: skew(25deg);
+}
+ }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="one"></div>
+    </div>
+</body>
+</html>

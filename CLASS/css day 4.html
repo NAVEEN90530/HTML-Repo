@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>day 4</title>
+    <style>
+        body{
+            background: linear-gradient(#33cc33 0%, #ff99cc 100%);
+            background-repeat: no-repeat;
+        }
+       /* wrap 
+       .one{
+            white-space:break-spaces;
+        }
+        .two{
+            white-space: pre-wrap;
+        }
+       .three {
+            white-space: pre-line;
+        }
+        .six{
+            white-space: nowrap;
+        }*/
+       /* selector::pseduo-element
+        {property:value
+        }*/
+        p::first-line{
+            color: #f9658c;
+        }
+        pre::first-letter{
+            color: red;
+            font-size: 50px;
+        }
+        .one::after{
+            content: 'hi mam';
+            color: aqua;
+        }
+        .two::before{
+            content: 'how are u';
+            color: black;
+        }
+        .three::before{
+            content: url(ak.jpeg );
+            width="25" height="25"
+        }
+        ::marker{
+            color: white;
+            font-size: 5px;
+        }
+        ::selection{
+            color: aqua;
+            background-color: goldenrod;
+        }
+    </style>
+</head>
+<body>
+    <p class="one">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, reiciendis.</p>
+    <pre>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, sit?</pre>
+    <p class="two">Lorem, ipsum dolor sit amet consectetur adipisicing elit. In, fuga.</p>
+   <p class="three">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Totam, autem.</p>
+   <p class="four">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugiat, reprehenderit!</p>
+   <ul>
+    <li>
+        hi
+    </li>
+    <li>how</li>
+   </ul>
+   <p class="five">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur, expedita?</p>
+    <p class="six">Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse necessitatibus accusantium rem quam repudiandae ipsam facere maxime sint, cumque minus.</p>
+</body>
+</html>

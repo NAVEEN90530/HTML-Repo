@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .move {
+  position: absolute;
+  top: 30%;
+  left: 40%;
+  width: 200px;
+  height: 100px;
+  color: #ddd;
+  font-size: 3em;
+  line-height: 100px;
+  text-align: center;
+  background: grey;
+  border: 5px solid saddlebrown;
+  /* transform-style: preserve-3d; */
+ 
+  animation: move 15s infinite;
+}
+@keyframes move { 
+  0% { 
+    transform-origin: left; 
+    background-color: blueviolet;
+  transform: perspective(600px) translateZ(90deg); 
+  }
+  33% { 
+    transform-origin: right;
+    background-color: rgb(16, 117, 194); 
+   transform: perspective(-60000px) rotateY(90deg); 
+  }
+  66% { 
+    transform-origin: top ; 
+    background-color: rgb(155, 196, 21);
+    transform: perspective(800px) translateZ(120px); 
+  }
+  100% { 
+    transform-origin: bottom; 
+    background-color: rgb(224, 100, 11);
+    transform: perspective(-800px) translateZ(20px),rotateY(90deg); 
+
+}
+}
+body {
+  background: #ddd;
+}
+    </style>
+</head>
+<body>
+    <div class="move">hi</div>
+</body>
+</html>

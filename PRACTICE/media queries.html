@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS3X2yLxpBffq4z3_ehz9Bt9jqNvQFdZSe5mg&usqp=CAU">
+    <title> Document</title>
+    <style>
+        @media print ,(orientation:portrait){
+            .title{
+                text-align: center;
+                color: grey;
+                font-size: 72px;
+            }
+        }    
+        /*all all-device
+        maax-width it not works in after max width
+        min-width it not works in after min width*/
+        @media (orientation:landscape) or (max-width:600px) {
+            .role{
+                text-align: center;
+                color: red;
+                font-size: 72px;
+            }
+        }
+        @media (min-width:600px) {
+            .l{
+                text-align: center;
+                color: red;
+                font-size: 50px;
+            }
+        }
+        @media (max-height:500px) {
+            .a{
+                text-align: center;
+                color: rgb(130, 26, 228);
+                font-size: 50px;
+            }
+        }
+        @media (min-height:500px) {
+            .b{
+                text-align: center;
+                color: rgb(130, 26, 228);
+                font-size: 50px;
+            }
+        }
+        @media (orientation:landscape) {
+            .c{
+                text-align: center;
+                color: rgb(130, 26, 228);
+                font-size: 50px;
+            }
+        }
+        @media (orientation:portrait) {
+            .d{
+                text-align: center;
+                color: rgb(130, 26, 228);
+                font-size: 50px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="title">NAVEEN</div>
+    <div class="role">WEB DEVELOPMENT</div>
+    <div class="l">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, vitae.</div>
+    <div class="a">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cum, inventore.</div>
+    <div class="b">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloremque, minus?</div>
+    <div class="c">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illo, perspiciatis?</div>
+    <div class="d">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, sint.</div>
+</body>
+</html>

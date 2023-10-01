@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create a Web Layout using Pseudo Elements</title>
+    <style>
+        p::first-line {
+            color: #ff0000;
+            background-color: aqua;
+            letter-spacing: 5px;
+            text-transform: capitalize;
+        }
+        div::marker{
+            content: ' * ';
+            font-size: 1.2em;
+        }
+        div::selection {
+             color: red;
+             background-color: yellow;
+        }
+        p::first-letter{
+            color: blue;
+            text-transform: uppercase;
+            font-size: xx-large;
+        }
+        div::before{
+            content: 'hi mam';
+            color: aqua;
+        }
+        div::after{
+            content: 'hi mam';
+            color: aqua;
+        }
+    </style>
+</head>
+<body>
+    <div><p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Velit nesciunt, mollitia ipsam molestias repellendus repudiandae Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto voluptates fugit alias accusamus veniam sint recusandae. Nesciunt aliquid inventore recusandae asperiores doloribus necessitatibus. Voluptatem eligendi commodi debitis possimus obcaecati nam minus veniam quia neque, ipsa eveniet doloribus a nemo necessitatibus itaque sunt labore nesciunt quibusdam? Temporibus, architecto iusto. Cupiditate deleniti eum numquam quos omnis similique harum ipsam quasi itaque obcaecati temporibus repellendus delectus neque sequi aspernatur, adipisci dolorem reiciendis non esse repudiandae sit optio. Architecto, velit dolorum aut sequi laborum maxime itaque assumenda quas explicabo quasi nemo inventore ducimus obcaecati, corporis, non alias. In quaerat illo adipisci numquam eligendi quas? officiis vero hic quas doloribus.</p></div>
+</body>
+</html>

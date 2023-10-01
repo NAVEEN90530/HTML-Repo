@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flux</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Croissant+One&display=swap');
+    
+    .container{
+        display:grid;
+        background-color: aquamarine;
+        grid-template-columns: auto auto auto ;
+        /* grid-template-rows:200px  auto; */
+        gap:3px;
+        padding: 10px;
+        
+        }
+
+    /* .container > div{
+     width: 100px;
+     height: 100px;
+    } */
+   .flux-item-1{background-color: brown;
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+   .flux-item-2{background-color: rgb(53, 63, 9);}
+   .flux-item-3{background-color: rgb(159, 218, 21);}
+   .flux-item-4{background-color: rgb(47, 228, 92);}
+   .flux-item-5{background-color: rgb(111, 122, 93); }
+   .flux-item-6{background-color: rgb(18, 21, 189);}
+   .flux-item-7{background-color: rgb(197, 30, 147);}
+   .flux-item-8{background-color: rgb(129, 81, 241);}
+   .flux-item-9{background-color: rgb(80, 154, 197);}
+    </style>
+</head>
+<body>
+
+    <!--   .classname.item-$*no of class(4)>{box-$no of box}     -->
+    <div class="container">
+        <div class="flux-item-1">box-1</div>
+        <div class="flux-item-2">box-2</div>
+        <div class="flux-item-3">box-3</div>
+        <div class="flux-item-4">box-4</div>
+        <div class="flux-item-5">box-5</div>
+        <div class="flux-item-6">box-6</div>
+        <div class="flux-item-7">box-7</div>
+       <!-- <div class="flux-item-4">box-4</div>
+        <div class="flux-item-5">box-5</div>
+        <div class="flux-item-6">box-6</div>
+        <div class="flux-item-7">box-7</div>
+        <div class="flux-item-8">box-8</div>
+        <div class="flux-item-9">box-9</div>-->
+    </div>
+</body>
+</html>

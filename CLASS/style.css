@@ -1,0 +1,22 @@
+#e1{
+    color:violet;
+    background-color: black;
+    font-size: 5rex;
+    font-family: 'Times New Roman', Times, serif;
+}
+#e2{
+    color:red;
+    background-color: blue;
+    font-size: 5rex;
+    font-family: 'Times New Roman', Times, serif;
+}
+.c1{
+    color:royalblue;
+    background-color: burlywood;
+    font-size: 5rex;
+    font-family: 'Times New Roman', Times, serif;
+}
+h1,h2,p1{
+    color: grey;
+    background-color: blanchedalmond;
+}

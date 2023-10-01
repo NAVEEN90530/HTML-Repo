@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        main{display:inline-flex;
+            flex-direction: column;
+        }
+        .main{
+            flex-wrap: nowrap;
+            display:inline-flex;
+            width: 100%;
+            flex-direction: row;
+            justify-content: space-between;
+            gap: 10px;
+        }
+        .one{
+            height: 200px;
+            width: 200px;
+            background-color: aquamarine;
+        }
+        .two{
+            height: 200px;
+            width: 200px;
+            border: 20px solid aqua;
+            background-color: aquamarine;
+        }
+        .three{
+            height: 200px;
+            width: 200px;
+            border: 20px solid aqua;
+            background-color: aquamarine;
+            padding: 20px;
+        }
+        .four{
+            height: 200px;
+            width: 200px;
+            border: 20px solid aqua;
+            background-color: aquamarine;
+            padding: 20px;
+            margin: 20px;
+        }
+        .a{color: aqua; 
+            font-size: larger;
+            flex-direction: row;
+            display: inline-flex;
+            width: 100%;
+            justify-content: space-around;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <div class="a">
+            <div>200x200</div>
+            <div>+border: 20</div>
+            <div>+padding: 20 </div>
+            <div>+margin : 20</div>
+        </div>
+     <div class="main">
+        <div class="one">
+            height: 200<br>
+            width: 200<br>
+            ----------------<br>
+            total:200 x 200 
+       </div>
+       <div class="two">
+         height: 200<br>
+         width: 200<br>
+         border : 20<br>
+         ----------------<br>
+         total:240 x 240
+        </div>
+       <div class="three">
+         height: 200<br>
+         width: 200<br>
+         border : 20<br>
+         padding : 20<br>
+         ----------------<br>
+         total:280 x 280
+        </div>
+        <div class="four">
+         height: 200<br>
+         width: 200<br>
+         border : 20<br>
+         padding : 20<br>
+         margin : 20<br>
+         ----------------<br>
+         total:280 x 280
+        </div>
+     </div>
+     <div class="a" id="b">
+        <div>200x200</div>
+        <div>240x240</div>
+        <div>280x280</div>
+        <div>280x280</div>
+     </div>
+    </main>
+</body>
+</html>

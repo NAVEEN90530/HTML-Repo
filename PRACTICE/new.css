@@ -1,0 +1,198 @@
+body{
+    background-image: url(https://images.unsplash.com/photo-1534796636912-3b95b3ab5986?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxleHBsb3JlLWZlZWR8MXx8fGVufDB8fHx8fA%3D%3D&w=1000&q=80);
+    color: white;
+    width: 90%;
+    height: 90%;
+    position: absolute;
+}
+.sun{
+    top: 48%;
+    left: 48%;
+    border-width: 3px;
+    border-style: solid;
+    border-radius: 100%;
+    box-shadow: 0 0 100px rgb(183, 201, 20);
+    height: 70px;
+    width: 70px;
+    margin-top: 21.5%; 
+    margin-left: 46.5%;
+    background-color: yellow;
+}
+
+p{
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);  
+}
+
+.mercury-outline,.venus-outline,.earth-outline,.mars-outline,.jupiter-outline,.saturn-outline,.uranus-outline,.neptune-outline{
+    border-radius: 50%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+.mercury{
+    top: 0%;
+    left: 48%;
+    border-radius: 100%;
+    box-shadow: 0 0 100px rgb(212, 78, 78);
+    height: 20px;
+    width: 20px;
+    background-color: blue;
+    -webkit-animation: spin-right 3.5s linear infinite;
+    -moz-animation: spin-right 3.5s linear infinite;
+    animation: spin-right 3.5s linear infinite;
+}
+.mercury-outline{
+    width: 140px;
+    height: 140px;
+}
+.venus{
+    top: 0%;
+    left: 46%;
+    border-radius: 100%;
+    box-shadow: 0 0 100px rgb(212, 78, 78);
+    height: 25px;
+    width: 25px;
+    background-color: rgb(218, 27, 13);
+    -webkit-animation: spin-left 7s linear infinite;
+    -moz-animation: spin-left 7s linear infinite;
+    animation: spin-left 7s linear infinite;
+}
+.venus-outline{
+    width: 203.75px;
+    height: 203.75px;
+}
+.earth{
+    top: 0%;
+    right: 42%;
+    border-radius: 100%;
+    box-shadow: 0 0 100px rgb(212, 78, 78);
+    height: 35px;
+    width: 35px;
+    background-color: blue;
+    -webkit-animation: spin-right 10s linear infinite;
+    -moz-animation: spin-right 10s linear infinite;
+    animation: spin-right 10s linear infinite;
+}
+.earth-outline{
+    width: 267.5px;
+    height: 267.5px;
+}
+.mars{
+    top: 0%;
+    left: 44%;
+    border-radius: 100%;
+    box-shadow: 0 0 100px rgb(212, 78, 78);
+    height: 25px;
+    width: 25px;
+    background-color: rgb(224, 86, 22);
+    -webkit-animation: spin-right 14s linear infinite;
+    -moz-animation: spin-right 14s linear infinite;
+    animation: spin-right 14s linear infinite;
+}
+.mars-outline{
+    width: 331.25px;
+    height: 331.25px;
+}
+.jupiter{
+    top: 0%;
+    left: 40%;
+    border-radius: 100%;
+    box-shadow: 0 0 100px rgb(212, 78, 78);
+    height: 40px;
+    width: 40px;
+    background-color: rgba(0, 0, 255, 0.753);
+    -webkit-animation: spin-right 18s linear infinite;
+    -moz-animation: spin-right 18s linear infinite;
+    animation: spin-right 18s linear infinite;
+}
+.jupiter-outline{
+    width: 395px;
+    height: 395px;
+}
+.saturn{
+    top: 0%;
+    left: 38%;
+    border-radius: 100%;
+    box-shadow: 0 0 100px rgb(212, 78, 78);
+    height: 30px;
+    width: 30px;
+    background-color: rgb(189, 17, 45);
+    -webkit-animation: spin-right 20s linear infinite;
+    -moz-animation: spin-right 20s linear infinite;
+    animation: spin-right 20s linear infinite;
+}
+.saturn-outline{
+    width: 458.75px;
+    height: 458.75px;
+}
+.uranus{
+    top: 0%;
+    left: 36%;
+    border-radius: 100%;
+    box-shadow: 0 0 100px rgb(212, 78, 78);
+    height: 32px;
+    width: 32px;
+    background-color: rgb(116, 14, 110);
+    -webkit-animation: spin-right 22s linear infinite;
+    -moz-animation: spin-right 22s linear infinite;
+    animation: spin-right 22s linear infinite;
+}
+.uranus-outline{
+    width: 522.5px;
+    height: 522.5px;
+}
+.neptune{
+    top: 0%;
+    left: 34%;
+    border-radius: 100%;
+    box-shadow: 0 0 100px rgb(212, 78, 78);
+    height: 30px;
+    width: 30px;
+    background-color: rgb(19, 170, 180);
+    -webkit-animation: spin-right 25s linear infinite;
+    animation: spin-right 25s linear infinite;
+}
+.neptune-outline{
+    width: 570px;
+    height: 570px;
+}
+.solar{
+    -webkit-animation: spin 25s linear infinite;
+    -moz-animation: spin 25s linear infinite;
+    animation: spin 25s linear infinite;
+}
+@-webkit-keyframes spin {
+    100% {
+        -webkit-transform: rotate(360deg);
+    }
+  }
+  
+  @-moz-keyframes spin {
+      100% {
+          -webkit-transform: rotate(360deg);
+      }
+  }
+@-webkit-keyframes spin-right {
+    100% {
+        -webkit-transform: rotate(360deg);
+    }
+  }
+  
+  @-moz-keyframes spin-right {
+      100% {
+          -webkit-transform: rotate(360deg);
+      }
+  }
+  @-webkit-keyframes spin-left {
+      100% {
+          -webkit-transform: rotate(-360deg);
+      }
+    }
+    @-moz-keyframes spin-left {
+        100% {
+            -webkit-transform: rotate(-360deg);
+        }
+    }

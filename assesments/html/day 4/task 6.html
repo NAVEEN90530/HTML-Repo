@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration form</title>
+</head>
+<body style="background-color: blueviolet; color: white;">
+    <header>
+        <h1>Register Your Account</h1> 
+    </header><br><br>
+     <main >
+         <section>
+           <form>
+            <fieldset><br>
+            <lable for="First Name">First Name :</lable>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="text" maxlength="30" class="First Name" id="First Name" pattern= "[A-Z,a-z]{30}">(max 30 characters a-z and A-Z)<br><br>
+            <lable for="Last Name">Last Name :</lable>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="text" maxlength="30" class="Last Name" id="Last Name" pattern= "[A-Z,a-z]{30}">(max 30 characters a-z and A-Z)<br><br>
+            <lable for="DOB">Date of Birth: </lable>&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="date" class="DOB" id="DOB" ><br><br>
+            <lable for="email">Email :</lable>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="email" maxlength="30" class="email" id="email" pattern= "[a-z ,0-9 ]{30} [@gmail.com ]{1}"><br><br>
+            <lable for="Mobile">Mobile Number:</lablel>&nbsp;
+            <input type="tel" maxlength="10" class="Mobile" id="Mobile" >(10 Digit Number)<br><br>
+            <lable for="gender"><br> Gender:</lable>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="radio" name="gender" id="male" value="male" >
+            <lable for="gender"> Male</lable> <input type="radio" name="gender" id="female" value="female" >
+            <lable for="gender"> Female</lable><br><br>
+            <label for="textarea">Adress:</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <textarea></textarea><br><br>
+            <label for="City">City</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="text" maxlength="30" class="City" id="City" pattern= "[A-Z,a-z]{30}">(max 30 characters a-z and A-Z)<br><br>
+            <label for="Pin code">Pin code</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="number" maxlength="6" class="Pin code" id="Pin code" pattern= "[0-9]{6}">(6 Digit Number)<br><br>
+            <label for="State">State</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="text" maxlength="30" class="State" id="State" pattern= "[A-Z,a-z]{30}">(max 30 characters a-z and A-Z)<br><br>
+            <label for="Country">Country</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="text" class="Country" id="Country" value="INDIA"><br><br>
+            <lable for="HOBBIES"> HOBBIES</lablel>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <lable for="HOBBIES"> Drawing</lablel>
+            <input type="checkbox" name="HOBBIES" id="Drawing">
+            <lable for="HOBBIES"> Dancing</lablel>
+            <input type="checkbox" name="HOBBIES" id="Dancing">
+            <lable for="HOBBIES"> Singing</lablel>
+            <input type="checkbox" name="HOBBIES" id="Singing"><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <lable for="HOBBIES"> Others</lablel>
+            <input type="checkbox" name="HOBBIES" id="Others"><input type="text"><br><br>
+            <label for="Qualification">Qualification</label>
+            <table>
+                <tr>
+                    <th>SL.NO</th>
+                    <th>Examination</th>
+                    <th>Board</th>
+                    <th>Percentage</th>
+                    <th>Year of Passing</th>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>Class X</td>
+                    <td><label for="Class X"></label> <input type="text" maxlength="10" name="Class X" id="Board"></td>
+                    <td><label for="Class X"></label> <input type="number" name="Class X" id="Percentage" pattern="[.,0-9]{1,2}"></td>
+                    <td><label for="Class X"></label> <input type="number" name="Class X" id="Year of Passing"></td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Class XII</td>
+                    <td><label for="Class XII"></label> <input type="text" maxlength="10" name="Class XII" id="Board"></td>
+                    <td><label for="Class XII"></label> <input type="number" name="Class XII" id="Percentage" pattern="[.,0-9]{1,2}"></td>
+                    <td><label for="Class XII"></label> <input type="number" name="Class XII" id="Year of Passing"></td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Graduation</td>
+                    <td><label for="Graduation"></label> <input type="text" maxlength="10" name="Graduation" id="Board"></td>
+                    <td><label for="Graduation"></label> <input type="number" name="Graduation" id="Percentage" pattern="[.,0-9]{1,2}"></td>
+                    <td><label for="Graduation"></label> <input type="number" name="Graduation" id="Year of Passing"></td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>Masters</td>
+                    <td><label for="Masters"></label> <input type="text" maxlength="10" name="Masters" id="Board"></td>
+                    <td><label for="Masters"></label> <input type="number" name="Masters" id="Percentage" pattern="[.,0-9]{1,2}"></td>
+                    <td><label for="Masters"></label> <input type="number" name="Masters" id="Year of Passing"></td>
+                </tr>
+            </table>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(10 Char max)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(Upto 2 Decimal max)<br><br>
+            <lable for="COURSES APPLIED FOR"> COURSES <BR>APPLIED FOR</lable>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <lable for="COURSES APPLIED FOR"> BCA</lable>
+            <input type="button" name="COURSES APPLIED FOR" id="BCA">
+            <lable for="COURSES APPLIED FOR"> B.Com</lable>
+            <input type="button" name="COURSES APPLIED FOR" id="B.Com">
+            <lable for="language"> B.Sc</lable>
+            <input type="button" name="COURSES APPLIED FOR" id="B.Sc">
+            <lable for="language"> B.A</lable>
+            <input type="button" name="COURSES APPLIED FOR" id="B.A"><br><br><br><br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="submit" value="Submit" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="reset" value="Reset" >
+            </fieldset>
+            </form>
+         </section>
+     </main><hr>
+     <footer>
+        <center>
+            copyrights &copy; 2023 Designed by Naveen .
+        </center>
+     </footer>
+</body>
+</html>

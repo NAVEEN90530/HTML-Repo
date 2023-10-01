@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       div {
+        width: 100px;
+        height: 100px;
+        background: red;
+        /* 
+         */
+         animation-name: my-animation;
+         animation-duration: 2s;
+         animation-timing-function: linear;
+         animation-delay:1s;
+         animation-direction: alternate;
+         animation-iteration-count: infinite;
+
+      }
+      #two:hover{
+  /* Modify size here: */
+  --size: 50px;
+  --padding: 10px;
+
+  position: relative;
+  width: calc(var(--size) - var(--padding));
+  height: calc(var(--size) / 2);
+  background: #333;
+  padding: var(--padding);
+}
+
+.tooltip-bottom:after {
+  content: '';
+  position: absolute;
+  top: 0%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(45deg);
+  background: #333;
+  height: 16px;
+  width: 16px;
+}
+        width: 100px;
+        height: 100px;
+        background: red;
+      }
+     
+      </style>
+</head>
+<body>
+    <!-- <div id="one">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloremque numquam itaque delectus quo, reprehenderit dolore nulla! Quibusdam, doloribus officia quod nobis at eos ullam nisi perspiciatis porro quae, sint recusandae?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sunt cum eaque facere inventore debitis odio a modi repudiandae laboriosam. Dignissimos error, distinctio mollitia deleniti possimus perferendis recusandae expedita reprehenderit perspiciatis!Lorem
+    </div><br> -->
+      <div id="two"></div>
+</body>
+</html>
